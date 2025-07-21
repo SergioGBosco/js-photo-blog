@@ -8,9 +8,24 @@ header {
   background-image: url(../img/wall.png);
 }
 
-body {
-  background-image: url(../img/cork.png);
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  padding: 15px;
 }
+
+body {
+  font-family: "Edu TAS Beginner";
+  font-weight: 400;
+  background-image: url(../img/cork.png);
+
+}
+
+
+
+
+
+/* Sezione Card */
 
 .card {
   position: relative;
