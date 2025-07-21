@@ -10,7 +10,7 @@ header {
 
 h1 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 7rem;
   padding: 15px;
 }
 
@@ -42,4 +42,13 @@ body {
   /* height: 300px; */
   margin: 15px;
   background-color: aqua;
+}
+
+/* Media Queries*/
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 8rem;
+  }
+
 }
