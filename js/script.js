@@ -34,7 +34,8 @@ axios.get(generatephoto).then(resp => {
     photo.addEventListener(`click`, () => {
       preview.classList.remove(`d-none`)
       overlay.classList.remove(`bg-transparent`)
-      console.log(elem.childNodes[3].childNodes[1])
+      console.log(elem.childNodes[3].childNodes[1].src);
+      preview.firstElementChild.src = elem.childNodes[3].childNodes[1].src
     })
   })
 });
@@ -56,7 +57,7 @@ const quit = document.getElementById(`quit`);
 
 
 
-
+console.log(preview)
 
 
 //aggiunta la funzione che al click la card seleziona scompare insieme all'overlay
