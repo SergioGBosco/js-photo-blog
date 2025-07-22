@@ -25,6 +25,30 @@ axios.get(generatephoto).then(resp => {
           </div>
         </div>`
   }
-  // console.log(photo)
 });
-// 
+//Recupero l'elemento html che mi permette di uscire dall'overlay
+
+const overlay = document.getElementById(`overlay`)
+const preview = document.getElementById(`preview`)
+const quit = document.getElementById(`quit`);
+//recupero gli elementi dell'html card per aggiungere le varie istruzioni
+setTimeout(() => {
+  const card = document.querySelectorAll(`.card`);
+  console.log(card)
+  //ciclo le card per aggiungere l'evento da effettuare
+  card.forEach((elem) => {
+    console.log(elem)
+    elem.addEventListener(`click`, () => {
+      preview.classList.addremove(`d-block`);
+      overlay.classList.remove(`bg-transparent`);
+    })
+  })
+}, 1000)
+
+//aggiunta la funzione che al click la card seleziona scompare insieme all'overlay
+
+quit.addEventListener(`click`, (e) => {
+  e.preventDefault();
+  preview.classList.add(`d-none`)
+  overlay.classList.add(`bg-transparent`)
+}) 
