@@ -10,7 +10,7 @@ axios.get(generatephoto).then(resp => {
   const object = resp.data;
   //ciclo gli oggetti e pusho gli indirizzi dell'immagine all'interno dell'array vuoto prima creato 
   for (i = 0; i < object.length; i++) {
-    cardContainer.innerHTML += `<div class="col-12 col-md-6 col-lg-4 ">
+    cardContainer.innerHTML += `<div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <div class="pin">
               <img src="img/pin.svg" alt="">
